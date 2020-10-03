@@ -1,0 +1,59 @@
+# include <iostream>
+using namespace std;
+
+int main()
+
+char OP;
+float no1, no2;
+
+
+cout << "Select One (/,*,-,+): ";
+cin >> OP;
+
+cout<< "Enter one operands: ";
+cin >> no1;
+cout<< "Enter Second operands: ";
+cin >> no2;
+
+switch(OP)
+{
+    case '+':
+        cout<< " Addition Is: ";
+        cout << no1+no2;
+        break;
+
+    case '-':
+        cout<< "Subtraction Is: ";
+        cout << no1-no2;
+        break;
+
+    case '*':
+        cout<< "Multiplication Is: ";
+        cout << no1*no2;
+        break;
+
+    case '/':
+        cout<< "Division Is: ";
+        cout << no1/no2;
+        break;
+
+    default:
+        // If symbol is different than -, +, / or *, this error is shown
+        cout << "Error! Invalid Input";
+        break;
+}
+
+return 0;
+
+}
+
+Output :-
+
+Select One (/,*,-,+): *
+
+Enter one operands: 256                                                                                                       
+Enter Second operands: 256                                                                                                    
+Multiplication Is: 65536                                                                                         
+                                                                                                                              
+...Program finished with exit code 0                                                                                          
+Press ENTER to exit console.  
